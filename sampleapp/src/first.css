@@ -1,0 +1,57 @@
+* {
+    background-color: #2C5364;
+}
+body{
+    background-color: #2C5364; 
+    color: white;              
+    font-family: 'Caveat', cursive;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    justify-content: center;
+
+}
+img{
+    width: 200px;
+    height: auto;
+}
+.two{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;  
+    color: black;          
+    width: 200px;
+}
+
+.songs-container {
+  margin: 20px;       /* space around the container */
+}
+
+.songs-container h2 {
+  margin-bottom: 10px;
+}
+
+.songs-container p {
+  margin-bottom: 15px;
+}
+
+.songs-list {
+  list-style-type: none; /* remove default bullets */
+  padding-left: 0;       /* remove default padding */
+}
+
+.songs-list li {
+  margin-bottom: 15px;   /* space between songs */
+}
+
+.songs-list p {
+  margin: 0;             /* remove extra margin for song titles */
+  font-weight: bold;
+}
+
+.songs-list audio {
+  display: block;        /* makes audio player appear on new line */
+  margin-top: 5px;
+}
