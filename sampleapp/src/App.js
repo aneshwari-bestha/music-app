@@ -12,16 +12,18 @@ function App() {
     <div>
       {page === 'home' && <Home onNext={() => setPage('welcome')} />}
       {page === 'welcome' && (
-        <Welcome
-          onNext={(name, language) => {
+        <Welcome onNext={(name, language) => {
             setUserData({ name, language });
             setPage('songs');
-          }}
-        />
-      )}
-      {page === 'songs' && (<Songs name={userData.name} language={userData.language} />)}
-      
-    </div>
+          }
+        }
+        />   )}
+      {page === 'songs' && (
+         <Songs
+         name={userData.name}
+         language={userData.language}
+         onBack={() => setPage('welcome')}   />   )}  
+</div>
   );
 }
 
