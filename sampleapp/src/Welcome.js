@@ -6,7 +6,7 @@ function Welcome({ onNext }) {
 return (
 <div>
       <h2>Welcome! Feel the rhythm of South Indian melodies..!</h2>
-      <input
+      <input className='five'
         type="text"
         placeholder="Enter your name"
         value={name}
